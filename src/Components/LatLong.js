@@ -12,8 +12,8 @@ function LatLong() {
     const API = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${searchQuery}&format=json`;
     const result = await axios.get(API);
     setLocation(result.data[0]);
-    console.log(result.data[0]);
-    console.log(location.display_name)
+    // console.log(result.data[0]);
+    // console.log(location.display_name)
   } 
 
   const handleSearch = (e) => { setsearchQuery(e.target.value);}
